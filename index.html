@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+AUTHOR: HB
+VERSION: 1.0
+CREATED: 1.24.2013
+ASSIGNMENT: HTML template
+-->
+<html lang="en" data-ng-app="mainApp">
+	<head>
+		<meta charset="utf-8">
+		<title> * * PPS Demo 2 * * </title>
+		<link href="css/foundation.css" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/customs.css" rel="stylesheet">
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+	</head>
+
+	<body data-ng-controller="DistrictCtrl">
+		<div data-ng-include="'pages/pps-top.html'"></div>
+		<div id="wrapper">
+			<div id="pps-slideshow">
+				<div id="slides">
+					<div>
+						<img src="images/1.jpg" alt="">
+					</div>
+					<div>
+						<img src="images/2.jpg" alt="">
+					</div>
+					<div>
+						<img src="images/3.jpg" alt="">
+					</div>
+					<div>
+						<img src="images/4.jpg" alt="">
+					</div>
+				</div>
+			</div>
+
+			<div class="row" id="pps-masthead">
+				<img src="images/pps_masthead.png" height="140" width="328">
+				<div class="navigation" data-ng-include="'pages/mainMenu.html'"></div>
+			</div>
+			<div data-ng-include="'pages/calendar.html'"></div>
+		</div>
+		<footer data-ng-include="'pages/footer.html'"></footer>
+
+		<!-- SCRIPTS -->
+		<script src="scripts/libs/angular.js"></script>
+		<script src="scripts/libs/jquery-2.1.3.min.js"></script>
+		<script src="scripts/libs/modernizr.js"></script>
+		<script src="scripts/libs/foundation.min.js"></script>
+		<script src="scripts/AngularJS/app.js"></script>
+		<script src="scripts/AngularJS/controller.js"></script>
+		<script src="scripts/main.js"></script>
+		<script src="scripts/DatesClass.js"></script>
+		<script src="scripts/loadCalendar.js"></script>
+		<script src="scripts/PersonClass.js"></script>
+		<script src="scripts/loadStaff.js"></script>
+	</body>
+</html>
